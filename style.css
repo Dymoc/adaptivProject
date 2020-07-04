@@ -106,13 +106,13 @@ body {
     text-align: left;
     margin-top: 31px;
     width: 425px;
-    margin-left: calc( (100vw - 768px) / 3);
+    margin-left: calc( (100vw - 768px) / 2.5);
   }
   .bgi_img {
     display: block;
     position: absolute;
-    right: calc( (100vw - 768px) / 3);
-    top: 360px;
+    right: calc( (100vw - 768px) / 2.5);
+    top: calc( ((100vw - 768px) / 10) + 380px);
   }
   .ourProject {
     width: 220px;
