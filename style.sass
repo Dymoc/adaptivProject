@@ -86,7 +86,7 @@ body
         line-height: 74px
         min-width: 650px
         margin-top: 112px
-        margin-left: calc( (100vw - 768px) / 3)
+        margin-left: calc( (100vw - 768px) / 2.5)
 
     
     .text
@@ -98,8 +98,10 @@ body
     .bgi_img
         display: block
         position: absolute
-        right: calc( (100vw - 768px) / 2.5)
-        top: calc( ((100vw - 768px) / 10) + 380px)
+        width: 336px
+        height: 293px
+        right: calc( (100vw - 768px) / 3)
+        top: calc( ((100vw - 768px) / 100) + 280px)
 
     .ourProject
         width: 220px
@@ -109,4 +111,31 @@ body
         padding-top: 15px
         font-size: 16px
         letter-spacing: 0.04em
-        margin-left: calc( (100vw - 768px) / 3)
+        margin-left: calc( (100vw - 768px) / 2.5)
+
+@media ( min-width: 1366px )
+
+    .center
+        padding-left: calc( 50% - 570px )
+        padding-right: calc( 50% - 570px )
+
+    .heading,
+    .text,    
+    .ourProject
+        margin: 0
+
+    .heading
+        margin-top: 100px
+
+    .text
+        margin-top: 32px
+
+
+    .bgi_img
+        width: 554px
+        height: 480px
+        top: 30px
+        margin-right: calc( (100vw - 1440px) / 8) 
+
+    .ourProject
+        margin-top: 71px
