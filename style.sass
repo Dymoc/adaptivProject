@@ -1,7 +1,112 @@
+$siteColor: #1F3F68
+$BGCColor: $siteColor +#3B5968
+    
 *
     margin: 0
     padding: 0
-    border-box-shadow: 0
-
+    box-sizing: border-box
+    
+    
 body
     font-family: 'Roboto', sans-serif
+    position: relative
+
+.hero
+    background: linear-gradient(0deg, #98C3E8 8.84%, rgba(152, 195, 232, 0) 31.12%)
+    opacity: 0.2
+    height: 376px
+    width: 100vw
+    position: absolute
+
+.center
+    padding-left: 15px
+    padding-right: 15px
+
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.content
+    position: relative
+
+.heading
+    font-size: 32px
+    line-height: 37px
+    text-align: center
+    letter-spacing: 0.04em    
+    padding-top: 28px
+    margin: 0 auto
+    width: 320px
+    color: #1F3F68
+
+.text
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 26px
+    text-align: center
+    letter-spacing: 0.05em
+    color: #1F3F68
+    opacity: 0.6
+    margin-top: 12px
+
+.bgi_img
+    display: none
+
+.ourProject
+    display: block
+    width: 108px
+    height: 27px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 26px
+    text-align: center
+    color: #FFFFFF
+    background-color: $BGCColor
+    margin: 0 auto
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2)
+    border-radius: 10px
+    margin-top: 32px
+
+@media ( min-width: 768px )
+
+    .hero
+        height: 768px
+
+    .center
+        padding-left: 32px
+        padding-right: 32px
+
+    .heading
+        text-align: left
+        margin: 0
+        font-size: 64px
+        line-height: 74px
+        min-width: 650px
+        margin-top: 112px
+        margin-left: calc( (100vw - 768px) / 3)
+
+    
+    .text
+        text-align: left
+        margin-top: 31px
+        width: 425px
+        margin-left: calc( (100vw - 768px) / 3)
+
+    .bgi_img
+        display: block
+        position: absolute
+        right: calc( (100vw - 768px) / 3)
+        top: 360px
+
+    .ourProject
+        width: 220px
+        height: 56px
+        margin: 0
+        margin-top: 73px
+        padding-top: 15px
+        font-size: 16px
+        letter-spacing: 0.04em
+        margin-left: calc( (100vw - 768px) / 3)
