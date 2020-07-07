@@ -28,6 +28,7 @@ body
     align-items: center
 
 .content
+    height: 376px
     position: relative
 
 .heading
@@ -70,6 +71,26 @@ body
     border-radius: 10px
     margin-top: 32px
 
+
+.promo
+    display: flex
+    flex-direction: column
+
+    &__heading
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 28px
+        text-align: center
+        letter-spacing: 0.05em
+        color: #000000
+
+.card
+    @extend .promo
+    
+
+
+
 @media ( min-width: 768px )
 
     .hero
@@ -78,6 +99,9 @@ body
     .center
         padding-left: 32px
         padding-right: 32px
+
+    .content
+        height: 700px
 
     .heading
         text-align: left
