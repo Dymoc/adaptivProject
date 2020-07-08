@@ -106,6 +106,28 @@ body {
   color: #000000;
 }
 
+.card {
+  max-width: 335px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-direction: columns;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  background: #FFFFFF;
+  -webkit-box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+          box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+  margin: 5% auto;
+}
+
+.card__img {
+  width: 160px;
+  height: 112px;
+  margin: 0 auto;
+}
+
 @media (min-width: 768px) {
   .hero {
     height: 768px;

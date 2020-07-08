@@ -8,6 +8,7 @@ $BGCColor: $siteColor +#3B5968
     
     
 body
+    
     font-family: 'Roboto', sans-serif
     position: relative
 
@@ -87,8 +88,20 @@ body
 
 .card
     @extend .promo
+    max-width: 335px
+    display: flex
+    justify-direction: columns
+    align-items: left
+    background: #FFFFFF
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+    border-radius: 10px
+    margin: 5% auto
     
 
+    &__img
+        width: 160px
+        height: 112px
+        margin: 0 auto
 
 
 @media ( min-width: 768px )
