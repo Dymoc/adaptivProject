@@ -85,23 +85,74 @@ body
         text-align: center
         letter-spacing: 0.05em
         color: #000000
+        margin-bottom: 32px
+        
 
+.cards
+    display: flex
+    flex-direction: column
+    
+     
 .card
     @extend .promo
-    max-width: 335px
+    max-width: 340px
     display: flex
     justify-direction: columns
     align-items: left
     background: #FFFFFF
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
     border-radius: 10px
-    margin: 5% auto
-    
+    margin: 0px auto 32px auto
+    padding: 0px 30px 21px 30px
 
-    &__img
-        width: 160px
-        height: 112px
-        margin: 0 auto
+    &_1
+        background-image: url("img/1.png")
+        background-repeat: no-repeat
+        background-position: 65px 40px
+    
+    &_2
+        background-image: url("img/2.png"),url("img/2_2.png")
+        background-repeat: no-repeat
+        background-position: 110px 40px, 60px 11px
+
+    &_3
+        background-image: url("img/3.png")
+        background-repeat: no-repeat
+        background-position: 75px 40px
+        
+
+    &__heading
+        margin-top: 48px
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 30px        
+        letter-spacing: 0.05em
+        color: #1F3F68
+        margin-top: 200px
+        margin-bottom: 13px
+
+    &__text
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 26px
+        letter-spacing: 0.05em
+        color: #1F3F68
+        opacity: 0.6
+
+    &__link
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 30px
+        letter-spacing: 0.05em
+        color: #5A98D0
+        margin-top: 46px
+        text-decoration: none
+
+        & i
+            font-size: 11px
 
 
 @media ( min-width: 768px )
@@ -124,6 +175,9 @@ body
         min-width: 650px
         margin-top: 112px
         margin-left: calc( (100vw - 768px) / 2.5)
+
+    .promo__heading
+        margin-bottom: 64px
 
     
     .text
@@ -176,3 +230,9 @@ body
 
     .ourProject
         margin-top: 71px
+
+    .promo__heading
+        margin-bottom: 64px
+
+    .cards
+        flex-direction: row
