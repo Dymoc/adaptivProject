@@ -68,7 +68,7 @@ body {
   display: none;
 }
 
-.ourProject {
+.ourProject__link {
   display: block;
   width: 108px;
   height: 27px;
@@ -226,7 +226,7 @@ body {
     right: calc( (100vw - 768px) / 3);
     top: calc( ((100vw - 768px) / 100) + 280px);
   }
-  .ourProject {
+  .ourProject__link {
     width: 220px;
     height: 56px;
     margin: 0;
@@ -245,7 +245,7 @@ body {
   }
   .heading,
   .text,
-  .ourProject {
+  .ourProject__link {
     margin: 0;
   }
   .heading {
@@ -260,7 +260,7 @@ body {
     top: 30px;
     margin-right: calc( (100vw - 1440px) / 8);
   }
-  .ourProject {
+  .ourProject__link {
     margin-top: 71px;
   }
   .promo__heading {
@@ -272,5 +272,6 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  max-width: 360px;
 }
 /*# sourceMappingURL=style.css.map */
