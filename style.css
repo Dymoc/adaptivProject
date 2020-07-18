@@ -68,7 +68,7 @@ body {
   display: none;
 }
 
-.ourProject__link {
+.ourProject__button {
   display: block;
   width: 108px;
   height: 27px;
@@ -118,10 +118,10 @@ body {
 }
 
 .card {
-  max-width: 340px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 335px;
   justify-direction: columns;
   -webkit-box-align: left;
       -ms-flex-align: left;
@@ -187,6 +187,44 @@ body {
 
 .card__link i {
   font-size: 11px;
+}
+
+.ourProject__promo {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.promo__link {
+  height: 145px;
+  border-radius: 10px;
+}
+
+.promo__link:hover .rectangle {
+  display: block;
+  z-index: 2;
+}
+
+.promo__link_img {
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(314.07deg, rgba(66, 165, 245, 0.4) 0%, rgba(21, 101, 192, 0.6) 97.81%);
+  border-radius: 10px;
+}
+
+.promo__link_top {
+  background: url("img/line_s.png") no-repeat, linear-gradient(314.07deg, rgba(66, 165, 245, 0.4) 0%, rgba(21, 101, 192, 0.6) 97.81%), url("img/smart_home_img_s.png") no-repeat;
+}
+
+.rectangle {
+  display: none;
+  width: 100%;
+  position: absolute;
+}
+
+.rectangle_line {
+  width: 40%;
 }
 
 @media (min-width: 768px) {
@@ -272,6 +310,8 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  max-width: 360px;
+  .card {
+    max-width: 360px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

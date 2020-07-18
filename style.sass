@@ -56,7 +56,7 @@ body
 .bgi_img
     display: none
 
-.ourProject__link
+.ourProject__button
     display: block
     width: 108px
     height: 27px
@@ -95,8 +95,8 @@ body
      
 .card
     @extend .promo
-    max-width: 340px
     display: flex
+    max-width: 335px
     justify-direction: columns
     align-items: left
     background: #FFFFFF
@@ -105,6 +105,7 @@ body
     margin: 0px auto 32px auto
     padding: 0px 30px 21px 30px
 
+  
     &_1
         background-image: url("img/1.png")
         background-repeat: no-repeat
@@ -153,6 +154,41 @@ body
 
         & i
             font-size: 11px
+
+.ourProject__promo
+    position: relative
+    display: flex
+
+
+.promo__link
+    height: 145px
+    border-radius: 10px
+
+    &:hover .rectangle
+        display: block
+        z-index: 2
+        
+
+
+    &_img 
+        width: 100%
+        position: absolute
+        background: linear-gradient(314.07deg, rgba(66, 165, 245, 0.4) 0%, rgba(21, 101, 192, 0.6) 97.81%)
+        border-radius: 10px
+
+
+
+    &_top        
+        background: url('img/line_s.png') no-repeat, linear-gradient(314.07deg, rgba(66, 165, 245, 0.4) 0%, rgba(21, 101, 192, 0.6) 97.81%), url('img/smart_home_img_s.png') no-repeat,
+
+
+.rectangle
+    display: none
+    width: 100%
+    position: absolute
+
+.rectangle_line
+    width: 40%
 
 
 @media ( min-width: 768px )
@@ -238,5 +274,4 @@ body
         flex-direction: row
 
     .card
-    max-width: 360px
-        
+        max-width: 360px
